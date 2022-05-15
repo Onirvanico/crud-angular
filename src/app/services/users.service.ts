@@ -21,11 +21,19 @@ export class UsersService {
     return this.http.get<User[]>(BASE_URL);
   }
 
+  findUserById(id: number): Observable<User[]> {
+    return this.http.get<User[]>(`${BASE_URL}/id/${id}`);
+  }
+
   postUser(user: User): Observable<User> {
     return this.http.post<User>(BASE_URL, user, this.httpOptions);
   }
 
   deleteUser(id: number): Observable<User> {
     return this.http.delete<User>(`${BASE_URL}/id/${id}`);
+  }
+
+  putUser(user: User): Observable<User> {
+    return this.http.put<User>(`${BASE_URL}/id/${user.id}`, user);
   }
 }
