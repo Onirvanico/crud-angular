@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LearningPipeComponent } from './components/learning-pipe/learning-pipe.component';
+import { PipeListPipe } from './pipes/pipe-list.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LearningPipeComponent } from './components/learning-pipe/learning-pipe.
     UserFormComponent,
     DataBindingComponent,
     ButtonComponent,
-    LearningPipeComponent
+    LearningPipeComponent,
+    PipeListPipe
   ],
   imports: [
     BrowserModule,

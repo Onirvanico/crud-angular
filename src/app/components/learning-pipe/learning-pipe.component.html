@@ -15,8 +15,12 @@
 
     <p>Data</p>
     <p>{{ date | date:'dd/MM/yyyy HH:mm:ss'}}</p>
+
     <p>Data ShortTime</p>
     <p>{{ date | date:'shortTime'}}</p>
+
+    <p>Pipe Customizado</p>
+    <p>{{ listWords | pipeList:"--" }}</p>
 
     <p>{{ text | uppercase }}</p>
 </div>

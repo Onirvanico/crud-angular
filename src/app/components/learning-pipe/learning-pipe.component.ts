@@ -11,6 +11,9 @@ export class LearningPipeComponent implements OnInit {
   text = "Hello World!";
   date = Date();
 
+  listWords = ["Minha", "Velha", "Traga", "Meu", "Jantar", "Sopa",
+               "Uva", "Nabo", "Pão"];
+
   constructor() { }
 
   ngOnInit(): void {
