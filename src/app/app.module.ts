@@ -10,13 +10,19 @@ import { UsersService } from './services/users.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { ButtonComponent } from './components/button/button.component';
+import { LearningPipeComponent } from './components/learning-pipe/learning-pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     UsersListComponent,
-    UserFormComponent
+    UserFormComponent,
+    DataBindingComponent,
+    ButtonComponent,
+    LearningPipeComponent
   ],
   imports: [
     BrowserModule,
